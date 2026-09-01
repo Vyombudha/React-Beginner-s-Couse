@@ -1,5 +1,5 @@
-import {useState} from 'react'
-  import { toast } from 'react-toastify';
+import { useState } from 'react'
+import { toast } from 'react-toastify';
 import Error from './Error';
 
 function Counter() {
@@ -12,16 +12,16 @@ function Counter() {
   function subtract() {
     if (counter - 1 < 0) {
       toast.error('Cannot Get Counter Below Zero', {
-position: "top-right",
-autoClose: 5000,
-hideProgressBar: false,
-closeOnClick: false,
-pauseOnHover: true,
-draggable: true,
-progress: undefined,
-theme: "dark",
-});
-      return; 
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+      return;
     }
     setCounter(counter - 1);
 
@@ -35,7 +35,7 @@ theme: "dark",
       </h3>
       <Error />
     </div>
-    
+
   )
 }
 
